@@ -17,7 +17,6 @@
 		216E476523392DDA005D427C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E476423392DDA005D427C /* LoginViewController.swift */; };
 		216E476723392DE9005D427C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E476623392DE9005D427C /* HomeViewController.swift */; };
 		217A5CE6233A99BA00CBAC80 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A5CE5233A99BA00CBAC80 /* constants.swift */; };
-		217A5CE9233AA53D00CBAC80 /* feat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 217A5CE8233AA53D00CBAC80 /* feat.mp4 */; };
 		60CDC3ACA96FBB25E096636A /* Pods_FirstLoginPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBFD681EA5D927D49DFA8C9 /* Pods_FirstLoginPage.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		216E476423392DDA005D427C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		216E476623392DE9005D427C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		217A5CE5233A99BA00CBAC80 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
-		217A5CE8233AA53D00CBAC80 /* feat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = feat.mp4; sourceTree = "<group>"; };
 		C93F107B6A84279105A1A3CB /* Pods-FirstLoginPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstLoginPage.debug.xcconfig"; path = "Target Support Files/Pods-FirstLoginPage/Pods-FirstLoginPage.debug.xcconfig"; sourceTree = "<group>"; };
 		CEBFD681EA5D927D49DFA8C9 /* Pods_FirstLoginPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstLoginPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,7 +106,6 @@
 		217A5CE7233AA10500CBAC80 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				217A5CE8233AA53D00CBAC80 /* feat.mp4 */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -194,7 +191,6 @@
 				21648E482339415E004D9BBB /* GoogleService-Info.plist in Resources */,
 				216E475823392C7A005D427C /* Assets.xcassets in Resources */,
 				216E475623392C79005D427C /* Main.storyboard in Resources */,
-				217A5CE9233AA53D00CBAC80 /* feat.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

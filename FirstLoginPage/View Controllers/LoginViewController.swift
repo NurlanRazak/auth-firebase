@@ -57,16 +57,26 @@ class LoginViewController: UIViewController {
         
         let actionCodeSettings = ActionCodeSettings.init()
         actionCodeSettings.handleCodeInApp = true
-            actionCodeSettings.url = URL.init(string: String(format: "firstlogindemo-79c79.firebaseapp.com/", email))
+            actionCodeSettings.url = URL.init(string: String(format: "https://www.example.com/?email=", email))
             actionCodeSettings.setIOSBundleID(Bundle.main.bundleIdentifier!)
-            Auth.auth().sendSignInLink(toEmail: email, actionCodeSettings: actionCodeSettings, completion: { (err) in
-                if let e = err{
-                    print("email not sent")
-                    print(e.localizedDescription)
+            
+            Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
+                if error != nil {
+                    print(error?.localizedDescription ?? "")
                 } else {
-                    print("email sent")
+                    let alert = UIAlertController(title: "Error", message: "Enter data in Text fields", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             })
+//            Auth.auth().sendSignInLink(toEmail: email, actionCodeSettings: actionCodeSettings, completion: { (err) in
+//                if let e = err{
+//                    print("email not sent")
+//                    print(e.localizedDescription)
+//                } else {
+//                    print("email sent")
+//                }
+//            })
             
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             

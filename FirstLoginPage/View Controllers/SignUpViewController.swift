@@ -82,6 +82,15 @@ class SignUpViewController: UIViewController {
                             self.showError("error with user saving")
                         }
                     })
+                    Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
+                        if error != nil {
+                            print(error?.localizedDescription ?? "")
+                        } else {
+                            let alert = UIAlertController(title: "Error", message: "Enter data in Text fields", preferredStyle: UIAlertController.Style.alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    })
                     self.transitionToHome()
                 }
             }
